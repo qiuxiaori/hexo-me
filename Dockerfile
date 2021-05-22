@@ -1,19 +1,3 @@
-# FROM ipple1986/hexo
-
-# # copy 文件或目录到镜像
-# COPY ./ /root/app
-
-# # 默认工作目录
-# WORKDIR /root/app
-
-# # RUN apt-get install git-core
-
-# # RUN npm install hexo-cli -g
-
-# RUN npm install
-
-# CMD ['hexo', 'server']
-
 # node环境镜像
 FROM node:latest AS build-env
 # 创建hexo-blog文件夹且设置成工作文件夹
